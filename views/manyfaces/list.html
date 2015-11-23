@@ -1,0 +1,7 @@
+<h2 class='gallery'>Gallery</h2>
+<button type="text" class="addanotherface"><a href="#/addFace">ADD ANOTHER FACE!</a></button>
+<div ng-repeat="manyfaces in BestFaces" id = {{faces._id}}>
+  <h6 class="title">{{manyfaces.title}}</h6>
+  <img ng-src="{{manyfaces.image}}" alt="" />
+  <button type="text" ng-click="removeFace(manyfaces)"  class="delete">DELETE THIS FACE</button>
+</div>
